@@ -16,7 +16,6 @@ export interface GameQuery {
 
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
-  console.log(gameQuery.genreId, gameQuery.platformId);
 
   return (
     <Grid
