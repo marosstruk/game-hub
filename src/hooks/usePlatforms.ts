@@ -14,7 +14,7 @@ const apiClient = new ApiClient<Platform>("/platforms/lists/parents");
 const usePlatforms = () =>
   useQuery<FetchResponse<Platform>, Error>({
     queryKey: ["platforms"],
-    queryFn: apiClient.get,
+    queryFn: apiClient.getAll,
     staleTime: ms("24h"),
     initialData: platforms,
   });
