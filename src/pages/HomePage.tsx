@@ -4,6 +4,7 @@ import GameHeading from "../components/GameHeading";
 import GenreList from "../components/GenreList";
 import PlatformSelector from "../components/PlatformSelector";
 import SortSelector from "../components/SortSelector";
+import ClearFilters from "../components/ClearFilters";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
           <HStack spacing={5} marginBottom={5}>
             <PlatformSelector />
             <SortSelector />
+            <ClearFilters />
           </HStack>
         </Box>
         <GameGrid />
